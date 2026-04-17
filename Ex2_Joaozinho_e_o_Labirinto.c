@@ -17,7 +17,7 @@ void percorre(int n, int m[n][n], int i, int j){    // avanca nas direcoes e se 
         return;
     }
 
-    m[i][j] = -1;                                   // define os caminhos que ja foram passados
+    m[i][j] = -1;                                   // define os caminhos que ja foram passados: como tá setado como -1 ele acaba voltando por conta do stack da pilha
 
     percorre(n, m, i+1, j);                         // prioriza descer
     percorre(n, m, i-1, j);
